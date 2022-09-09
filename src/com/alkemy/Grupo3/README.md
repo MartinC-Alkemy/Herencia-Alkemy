@@ -1,6 +1,6 @@
 # HERENCIA
 
-##### Escriba una jerarquia para la clase Persona, Empleado, EmpleadoBaseMasComision, EmpleadoPorConmision y EmpleadoAsalariado.
+##### Escriba una jerarquia para la clase Persona, Empleado, EmpleadoBaseMasComision, EmpleadoPorConmision, EmpleadoAsalariado y EmpleadoPorHoras.
 
 - Use Persona como la superclase de la jerarquia ->
   - 	nombre: String

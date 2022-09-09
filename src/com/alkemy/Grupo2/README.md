@@ -2,19 +2,21 @@
 
 ##### Escriba una jerarquia para la clase Persona, Empleado, EmpleadoBaseMasComision, EmpleadoPorConmision, EmpleadoAsalariado y EmpleadoPorHoras.
 
-- Use Persona como la superclase de la jerarquia ->
-    - 	nombre: String
-    - 	apellido: String
-    - 	edad: int
-    - 	void presentarse()
-    - 	boolean esMayorDeEdad()
+Las variables de instancia deben estar ocultas
 
-- Las variables de instancia de Empleado deben ser estar ocultas ->
-    - 	ventasBrutas: double
-    - 	tarifaComision: double
-    - 	numeroDeSeguroSocial: String
-    - 	double ingresos()
-    - 	String toString()
+- Use Persona como la superclase de la jerarquia ->
+  - 	nombre: String
+  - 	apellido: String
+  - 	edad: int
+  - 	void presentarse()
+  - 	boolean esMayorDeEdad()
+
+- Empleado  ->
+  - 	ventasBrutas: double
+  - 	tarifaComision: double
+  - 	numeroDeSeguroSocial: String
+  - 	double ingresos()
+  - 	String toString()
 
 - EmpleadoPorComision: cobra un salario en funcion la tarifaComision y sus ventas brutas
 - EmpleadoBaseMasComision: cumple las mismas regras que empleadoPorComision pero este, ademas, cobra una base que debe ser definida al momento de su creacion

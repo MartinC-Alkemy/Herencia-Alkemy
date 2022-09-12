@@ -28,6 +28,7 @@ public class Main {
         empleados.add(porHoras);
 
         for(Empleado empleado: empleados){
+            empleado.presentarse();
             System.out.println(empleado + "\nIngresos del mes: $" +
                     empleado.ingresos() + "\n------------------------\n");
 

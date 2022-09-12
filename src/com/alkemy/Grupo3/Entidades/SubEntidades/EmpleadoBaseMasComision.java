@@ -1,0 +1,49 @@
+package com.alkemy.Grupo3.Entidades.SubEntidades;
+
+import com.alkemy.Grupo3.Entidades.Empleado;
+import com.alkemy.Grupo3.Interface.IEmpleado;
+
+
+public class EmpleadoBaseMasComision  extends Empleado implements IEmpleado {
+
+    private double sueldoBase;
+
+
+
+    public EmpleadoBaseMasComision(String nombre, String apellido, int edad, double ventasBrutas, String numeroSeguroSocial, double sueldoBase) {
+        super(nombre, apellido, edad, ventasBrutas, numeroSeguroSocial);
+        this.sueldoBase = sueldoBase;
+    }
+
+    public double getSueldoBase() {
+        return sueldoBase;
+    }
+
+    public double getSalario() {
+        return salario;
+    }
+
+    @Override
+    public double ingresos(){
+        System.out.println("Salario para el empleado: ");
+        System.out.println("Ventas: " + getVentasBrutas());
+        setTarifaComision(getVentasBrutas() * 0.1);
+        System.out.println("Tarifa de Comision: " + getTarifaComision());
+        double comisionVentas = getVentasBrutas() * 0.2;
+        System.out.println("Comisión de ventas: " + comisionVentas);
+        System.out.println("Sueldo base: " + getSueldoBase());
+       setSalario(getTarifaComision() + getSueldoBase() + comisionVentas);
+        return getSalario();
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado Base Mas Comisión = " +
+                "nombre: '" + getNombre() + '\'' +
+                ", apellido: '" + getApellido() + '\'' +
+                ", edad: " + getEdad() +", " +
+                ", Numero Social: '" + getNumeroSeguroSocial() + '\'' + " "+
+                "Salario a devengar: $"  +ingresos() +
+                '.';
+    }
+}

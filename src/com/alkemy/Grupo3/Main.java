@@ -8,5 +8,6 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Hello Grupo 3!");
+        Empleado.empleadosList();
     }
 }

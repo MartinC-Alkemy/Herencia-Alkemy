@@ -15,12 +15,25 @@ public class Main {
         EmpleadoPorHoras aa = new EmpleadoPorHoras("Ruiz", "Augusto", 20, "5855sewg", 15000, 450, 40);
         EmpleadoBaseMasComision b = new EmpleadoBaseMasComision(60000, 1.1, "Diaz", 54, "Roberto", "87sw", 9000);
 
+        x.presentarse();
         x.ingresos();
+        System.out.println(" ");
+        y.presentarse();
         y.ingresos();
+        System.out.println(" ");
+        z.presentarse();
         z.ingresos();
+        System.out.println(" ");
+        zz.presentarse();
         zz.ingresos();
+        System.out.println(" ");
+        a.presentarse();
         a.ingresos();
+        System.out.println(" ");
+        aa.presentarse();
         aa.ingresos();
+        System.out.println(" ");
+        b.presentarse();
         b.ingresos();
 
 

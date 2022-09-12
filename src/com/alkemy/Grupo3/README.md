@@ -1,5 +1,7 @@
 # HERENCIA
 
+## Libia
+## Valentina 
 ##### Escriba una jerarquia para la clase Persona, Empleado, EmpleadoBaseMasComision, EmpleadoPorConmision, EmpleadoAsalariado y EmpleadoPorHoras.
 
 Las variables de instancia deben estar ocultas
